@@ -28,34 +28,17 @@ const graph = {
 
 // depthFirstPrint(graph, 'a');
 
-// const breadthFirstPrint = (graph, source) => {
-//     const queue = [ source ];
-
-//     while (queue.length > 0) {
-//         const current = queue.shift();
-//         console.log(current);
-
-//         for (let neighbor of graph[current]) {
-//             queue.push(neighbor);
-//         }
-//     }
-// }
-
-// breadthFirstPrint(graph, 'a')
-
-const hasPath = (graph, src, dst) => {
-    const queue = [ src ];
+const breadthFirstPrint = (graph, source) => {
+    const queue = [ source ];
 
     while (queue.length > 0) {
         const current = queue.shift();
-        if (current === dst) return true;
+        console.log(current);
 
         for (let neighbor of graph[current]) {
-            queue.push(neighbor)
+            queue.push(neighbor);
         }
     }
-
-    return false;
 }
 
-console.log(hasPath(graph, 'e', 'a'))
+breadthFirstPrint(graph, 'a')
