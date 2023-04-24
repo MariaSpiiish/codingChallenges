@@ -20,4 +20,4 @@ for (let key in obj) {
     }
 }
 
-console.log(result)
+console.log(result);
