@@ -34,4 +34,4 @@ function findMax(arr) {
     return (arr[0] > sub_max) ? arr[0] : sub_max;
 }
 
-console.log(findMax([5, 1, 7, 2, 3, 0]))
+console.log(findMax([5, 2]))
